@@ -15,7 +15,11 @@ class Node:
         else:
             self.g = 0
         # Heuristic function
+<<<<<<< HEAD
+        self.cost = self.g + sqrt((env[0] - goal[0]) ** 2 + (env[1] - goal[1]) ** 2) + (
+=======
         self.weight = self.g + sqrt((env[0] - goal[0]) ** 2 + (env[1] - goal[1]) ** 2) + (
+>>>>>>> d2b054beac22f2227f5e470247076e85b2a770e3
                 (env[2] - floor(atan2((goal[1] - start[1]), (goal[0] - start[0])))) / 30)  # * (step / 5)
 
     # Solve for path from goal to start node
